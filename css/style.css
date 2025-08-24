@@ -1,0 +1,123 @@
+/* All common css start  */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Lato", sans-serif;
+}
+body{
+    background-color: #121212;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0%;
+    padding: 0%;
+    line-height: 0.8;
+}
+/* All common css end  */
+
+/* Headerpart start  */
+.navbar-nav{
+    padding: 0 20px;
+}
+.nav-link{
+    color: #959595;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #FD6F00;
+    font-weight: 700;
+}
+.btn{
+   background-image: linear-gradient(to bottom, #FD6F00 0%, #E46400 100%);
+   padding: 12px 40px;
+   color: #FFFFFF;
+   font-size: 16px;
+   font-weight: 700;
+   border-radius: 8px;
+   outline: none;
+   border: 1px solid #FD6F00;
+   transition: .4s;
+}
+.btn:hover{
+    background: transparent;
+    color: #959595;
+    border: 1px solid #959595;
+}
+/* Headerpart end  */
+
+/* Bannerpart start  */
+#bannerPart{
+    padding-top: 130px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.bannerText{
+    padding-top: 30px;
+}
+.bannerText h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #707070;
+}
+.bannerText h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #959595;
+    padding-top: 22px;
+}
+.bannerText h1{
+    font-size: 70px;
+    font-weight: 900;
+    padding: 24px 0;
+    background-image: linear-gradient(to right, #984300, #FD6F00, #CA5900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+}
+.bannerIcon a{
+    padding: 5px 8px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    border:1px solid #959595;
+    transition: .4s;
+}
+.bannerIcon a:hover{
+    color: #FFFFFF;
+     border:1px solid #FD6F00;
+    background-color: #FD6F00;
+}
+.counterItem{
+    background-color: #FFFFFF;
+    opacity: 18%;
+    padding: 10px; 
+    margin-top: 80px;
+}
+.hirebtn{
+    margin-top: 60px;
+    margin-right: 30px;
+    display: inline-block;
+    transition: .7s;
+}
+
+.model{
+  text-align: end;
+}
+.model img {
+  transition: 0.4s;
+
+}
+.model img:hover {
+  transform: scale(1.03);
+}
+/* Bannarpart end  */
