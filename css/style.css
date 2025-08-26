@@ -1,127 +1,167 @@
-/* All common css start  */
+/* All common CSS start */
 *{
     margin: 0%;
-    padding: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
     font-family: "Lato", sans-serif;
 }
 body{
-    background-color: #121212;
+    background: #1e1e1e;
 }
-a{
-    text-decoration: none;
-}
+
 ul,ol{
     list-style-type: none;
 }
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
 h1,h2,h3,h4,h5,h6,p{
-    margin: 4.0%;
+    margin: 0%;
     padding: 0%;
     line-height: 0.8;
 }
-/* All common css end  */
-
-/* Headerpart start  */
-.navbar-nav{
-    padding: 0 20px;
+/* All common CSS end */
+ /* Headerpart start */
+.navbar{
+    background: #1e1e1e;
+    width: 100%;
+    /* padding-top: 60px;
+    padding-bottom: 150px; */
 }
-.nav-link{
-    color: #959595;
+ .nav-item a{
+    color: #959595!important;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: medium;
+    letter-spacing: 3%;
+    padding-left: 15px !important;
+    transition: .5s;
+ }
+ .nav-item a:hover{
+ color: #FD6F00 !important;
+ }
+.hirebtn a{
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3%;
+    background: linear-gradient(to bottom right, #FD6F00, #E46400);
+    padding: 10px 35px;
+    border-radius: 8px;
+    border: 2px solid #FD6F00;
+     transition: .5s !important;
 }
-.nav-link:hover{
-    color: #FD6F00;
-    font-weight: 700;
+.hirebtn a:hover{
+   background: transparent !important;
+    color: #E46400 !important;
 }
-.btn{
-   background-image: linear-gradient(to bottom, #FD6F00 0%, #E46400 100%);
-   padding: 12px 40px;
-   color: #FFFFFF;
-   font-size: 16px;
-   font-weight: 700;
-   border-radius: 8px;
-   outline: none;
-   border: 1px solid #FD6F00;
-   transition: .4s;
+  /* Headerpart end */
+   /* banner part start  */
+#bannerpart{
+    width: 100%;
+    padding-top:173px;
 }
-.btn:hover{
-    background: transparent;
-    color: #959595;
-    border: 1px solid #959595;
+.bannertext{
+    padding-top: 150px;
 }
-/* Headerpart end  */
-
-/* Bannerpart start  */
-#bannerPart{
-    padding-top: 130px;
-    padding-bottom: 60px;
-    position: relative;
-}
-.bannerText{
-    padding-top: 30px;
-}
-.bannerText h4{
+.bannertext h4{
+    color: #707070;
     font-size: 24px;
     font-weight: 600;
-    color: #707070;
+    letter-spacing: 3%;
+    padding-bottom:20px;
 }
-.bannerText h3{
+.bannertext h3{
+    color: #959595;
     font-size: 28px;
     font-weight: 700;
-    color: #959595;
-    padding-top: 22px;
+    letter-spacing: 3%;
+    padding-bottom: 45px;
 }
-.bannerText h1{
+.bannertext h1{
+ background: linear-gradient(90deg, #984300 0%, #FD6F00 46%, #CA5900 100%);
+  background-clip: text;
+  color: transparent;
     font-size: 70px;
     font-weight: 900;
-    padding: 24px 0;
-    background-image: linear-gradient(to right, #984300, #FD6F00, #CA5900);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 50px;
+    letter-spacing: 3%;
+    padding-bottom: 55px;
+    display: flex;
 }
-.bannerIcon a{
-    padding: 5px 8px;
-    border-radius: 50px;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 40px;
+.bannericon i{
     display: inline-block;
+    height: 45px;
+    width:45px;
+    font-size: 24px;
+     color: #BABABA;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    padding-top: 10px;
     margin-right: 20px;
-    border:1px solid #959595;
+    transition: .8s;
+}
+.bannericon i:hover{
+    color: #FD6F00;
+    border: 1px solid #984300;
+}
+.bannerbtn a{
+    margin-top: 61px;
+    letter-spacing: 3%;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #FD6F00, #E46400);
+    padding: 10px 35px;
+    border-radius: 8px;
+     transition: .5s !important;
+     border: 2px solid #FD6F00!important; 
+     margin-right: 24px;
+}
+.bannerbtn a:hover{
+    border: 2px solid #959595 !important;
+    background: transparent !important;
+    color: #959595 !important;
+}
+.bannercounter{
+      margin-top: 80px; 
+      background: rgba(255, 255, 255, 4%)!important;
+    border-radius: 8px;
+    padding:25px;
+}
+.banneritem{
+    /* background: rgba(255, 255, 255, 4%)!important; */
+ border-right: 2px solid #575757;
+    /* text-align: center; */
+}
+.banneritem h3{
+    color: #FD6F00 !important;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 3%;
+    padding-bottom: 20px;
+}
+.banneritem p{
+    color: #dfdfdf !important;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3%;
+}
+.banner image{
     transition: .4s;
+    margin-left: 30px; 
+    width: 100%;
+    justify-content: right;
 }
-.bannerIcon a:hover{
-    color: #FFFFFF;
-     border:1px solid #FD6F00;
-    background-color: #FD6F00;
+.banner image:hover{
+    transform: scale(1.05);
 }
-.counterItem{
-    background-color: #FFFFFF;
-    opacity: 18%;
-    padding: 10px; 
-    margin-top: 80px;
-}
-.hirebtn{
-    margin-top: 60px;
-    margin-right: 30px;
-    display: inline-block;
-    transition: .7s;
+.last{
+    border: none!important;
 }
 
-.model{
-  text-align: end;
-}
-.model img {
-  transition: 0.4s;
-
-}
-.model img:hover {
-  transform: scale(1.03);
-}
-/* Bannarpart end  */
- /* servicepart start */
+ /* banner part end */
+/* servicepart start */
 #servicepart{
  padding-bottom :136px!important;
     
@@ -153,11 +193,7 @@ h1,h2,h3,h4,h5,h6,p{
     transform:scale(1.06);
     box-shadow: 0 0 20px 0 rgba(250, 248, 248, 0.2);
 }
-.serviceitem:hover{
-    transform:scale(1.06);
-    box-shadow: 0 0 20px 0 rgba(250, 248, 248, 0.2);
-}
-.serviceitemm{
+.serviceitem{
     margin-top: 40px;
     margin-left: 40px;
      background: rgba(255, 255, 255, 4%)!important;
@@ -170,11 +206,6 @@ h1,h2,h3,h4,h5,h6,p{
     color: #FD6F00;
     padding-bottom: 16px;
 }
-.serviceitemm i{
-    font-size: 70px;
-    color: #FD6F00;
-    padding-bottom: 16px;
-}
 .serviceitem h3{
     color:#FD6F00 ;
     font-size:24px ;
@@ -182,20 +213,6 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing:3% ;
     padding-bottom: 34px;
 }
-.serviceitemm h3{
-    color:#FD6F00 ;
-    font-size:24px ;
-    font-weight: 700;
-    letter-spacing:3% ;
-    padding-bottom: 34px;
-}
-.serviceitem p{
-color:#575757 ;
-    font-size:20px ;
-    font-weight: medium;
-    line-height: 160%;
-    letter-spacing:3% ;
-}
 .serviceitem p{
 color:#575757 ;
     font-size:20px ;
@@ -203,11 +220,5 @@ color:#575757 ;
     letter-spacing:3% ;
     line-height: 160%;
 }
-.serviceitem p{
-color:#575757 ;
-    font-size:20px ;
-    font-weight: medium;
-    line-height: 160%;
-    letter-spacing:3% ;
-}
+
 /* servicepart end */
